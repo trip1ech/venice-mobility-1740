@@ -1,6 +1,5 @@
 # Human Mobility and Traghetti in 1740's Venice
 
-
 Have you ever been to Venice? Today, researchers study urban mobility using population-based simulations, telecommunication data, or GPS trajectories. However, our research offers a unique perspective by examining human mobility in 18th-century Venice. We used the Catastici—a Venetian register that documents the ownership, division, and use of land parcels in 1740—to model urban mobility nearly 300 years ago.
 
 The Catastici records housing properties, including the owner, tenant, and the function of each parcel, written in Italian. With OCR techniques, we were able to apply computational methods to gain a deeper understanding of daily life in the past.
