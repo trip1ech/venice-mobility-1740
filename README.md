@@ -26,7 +26,7 @@ We systematically categorized properties based on keywords extracted from the pa
 
 The inclusion of the '''Mixed Use''' category reflects the tendency of Venetian residents to combine living and working spaces. Meanwhile, the '''Traghetti/Squero''' category highlights the importance of ferries and boatyards in Venice's unique transport system.
 
-![](/static/img/Venice-1740/Poi-classification.png)
+![](/readme-img/Poi-classification.png)
 
 The classification result highlights the dense residential areas in the northern and southern regions, with commercial hubs concentrated in the central areas. The traghetti locations emphasize the city’s reliance on waterborne transportation, complementing the street networks to facilitate movement and trade.
 
@@ -47,11 +47,11 @@ For those who rent more than 1 properties, the places with class House/Propertie
 
 To visualize the spatial distribution of human mobility in 1740 Venice, we constructed the Origin-Destination (OD) network based on agents’ home and workplace locations. The O-D pairs analysis reveals significant spatial patterns in the home-work connections of agents in 1740 Venice.
 
-![](/static/img/Venice-1740/OD-network.png)
+![](/readme-img/OD-network.png)
 
 By the links between agents’ homes and workplaces, we can observe that the central districts emerged as key hubs of activity, exhibiting a high density of destination points. This reflects the concentration commercial properties within the core areas, aligning with the urban fabric of Venice at the time.
 
-![](/static/img/Venice-1740/ghetto-highlight.png)
+![](/readme-img/ghetto-highlight.png)
 
 Furthermore, in the Ghetto area, we observe a significant number of intra-regional OD pairs, indicating localized movement within this district. This aligns with the historical context, as the Jewish population was confined to the Ghetto during specific hours of the day.
 
@@ -67,7 +67,7 @@ The raw road network data presented significant challenges, including:
 These issues posed a limitation for network-based simulations, as agents would be unable to traverse between their designated home and work locations effectively.
 
 
-![](/static/img/Venice-1740/Road-cleaning-procedure.jpg)
+![](/readme-img/Road-cleaning-procedure.jpg)
 
 
 
@@ -81,7 +81,7 @@ To address these issues and ensure a usable road network, we applied a series of
 
 After completing a series of geometry engineering procedures using GIS software, we obtained a fully connected street network of Venice. This process ensured that all segments are topologically correct and fully integrated, enabling seamless movement across the network.
 
-![](/static/img/Venice-1740/Network-road.png)
+![](/readme-img/Network-road.png)
 
 The Origin-Destination (OD) points were then projected onto the refined street network, making them ready for subsequent analysis of human mobility patterns.
 
@@ -91,7 +91,7 @@ The Origin-Destination (OD) points were then projected onto the refined street n
 
 For the '''traghetti''' routes, we digitized the primary ferry pathways using historical maps as a reference. Recognizing the strategic importance of these routes in Venice's transport system, we assumed that all traghetti stations were interconnected, enabling seamless movement between any two ferry-serviced locations.
 
-![](/static/img/Venice-1740/Network-all.png)
+![](/readme-img/Network-all.png)
 
 Through this process, we successfully transformed the road and traghetti networks into a '''fully connected graph'''. This allowed agents to travel between any two points in Venice, whether via roads or ferry routes, enabling robust simulations of human mobility and transportation patterns.
 
@@ -103,7 +103,7 @@ After preparing the data, we simulated agents' movements between home and work l
 
 The traghetti routes—the key gondola crossings in Venice—were incorporated into the network. Notably, access to these traghetti routes is only allowed at designated traghetto locations identified in the catastici of 1740. The completion of both road and canal network data provides a foundation for modeling mobility and transportation patterns in historical Venice.
 
-![](/static/img/Venice-1740/OD-example.jpg)
+![](/readme-img/OD-example.jpg)
 
 
 We assess the functional role of the traghetti by comparing traffic flow under two scenarios:
@@ -116,7 +116,7 @@ By analyzing the flow differences between these two scenarios, we were able to b
 
 1. **Using the street network only**
 
-![](/static/img/Venice-1740/Road-traffic.png)
+![](/readme-img/Road-traffic.png)
 
 Streets with a high concentration of shops and commercial properties, such as Ruga Vecchia San Giovanni (known for its activity even today), tend to experience significant traffic and become bustling centers of activity.
 
@@ -124,11 +124,13 @@ When agents are restricted to using only the street network, the connectivity of
 
 2. **Allowing agents to travel via both the road network and the traghetti network**
 
-![](/static/img/Venice-1740/All-traffic.png)
+![](/readme-img/All-traffic.png)
 
 However, when traghetti are available as a transportation option, the travel patterns in Venice change significantly. A high concentration of traffic flow can be observed along the Grand Canal, reflecting its central role in facilitating movement.
 
 In particular, residents from the northern districts—primarily residential areas—can efficiently travel across the canals via traghetti to access the commercial center for business activities. This highlights the importance of traghetti in reducing travel constraints and enhancing mobility across Venice’s unique urban system in 18th century.
+
+You can view the [Interactive Webapp Demo](https://trip1ech.github.io/venice-mobility-1740) to explore the results and switch between different basemaps. Please note that the GitHub page might be a bit slow to load.
 
 #### Conclusion
 
@@ -137,4 +139,6 @@ By combining the street network data and tenant information, we successfully rec
 This research not only demonstrates the applicability of modern data-driven methods to historical datasets but also underscores the potential of combining spatial analysis with historical records to answer questions about urban life in the past.
 
 In the future, this approach could be expanded further by integrating additional archival data, familial archives, to refine our understanding of ownership patterns and tenant operations. Moreover, comparing historical findings with the current usage and management of traghetti could provide valuable insights into the continuity and evolution of Venice’s transport system over centuries.
+
+
 
